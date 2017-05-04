@@ -774,3 +774,13 @@ key interpolation
   "foo-#{bar}": "quz"
 }
 ##end
+
+##desc
+export syntax
+##input
+import cool, { foo } from 'bar'
+export default 'wow'
+##expected
+import cool, { foo } from 'bar'
+export default 'wow'
+##end
